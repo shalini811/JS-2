@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to check whether a given value is alpha numeric or not.</title>
+</head>
+<body>
+<script>
+function is_alphaNumeric(str)
+{
+ regexp = /^[A-Za-z0-9]+$/;
+  
+        if (regexp.test(str))
+          {
+            return true;
+          }
+        else
+          {
+            return false;
+          }
+}
+
+document.write(is_alphaNumeric("37828sad")+"<br>");
+
+document.write(is_alphaNumeric("3243#$sew") +"<br>");
+
+document.write(is_alphaNumeric("3425red"));
+</script>
+</body>
+</html>
